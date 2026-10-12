@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Shop scientific calculators for engineering students at Notes Factory.">
+  <title>Notes Factory | Engineering Essentials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">ENGINEERING ESSENTIALS, DELIVERED TO YOUR DOOR</div>
+  <header class="nav wrap">
+    <a class="brand" href="/" aria-label="Notes Factory home"><span class="brand-mark">NF</span><span>NOTES<span class="brand-light"> FACTORY</span><small>TOOLS FOR YOUR NEXT BIG IDEA</small></span></a>
+    <nav><a href="#products">Shop</a><a href="#why-us">Why Notes Factory</a><a href="#footer">Support</a></nav>
+    <a class="cart-link" href="#checkout">Cart <span id="cart-count">0</span></a>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> BUILT FOR ENGINEERING STUDENTS</p>
+        <h1>Small tools.<br><span>Big possibilities.</span></h1>
+        <p class="hero-text">Your academic journey deserves dependable tools. Explore carefully listed engineering essentials from Notes Factory.</p>
+        <a class="primary-btn" href="#products">Explore products <span>↗</span></a>
+        <div class="trust-row"><span>✓ Secure checkout</span><span>✓ Student-focused</span><span>✓ Order updates</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <div class="art-label">THE ENGINEERING EDITION <span>01 / 01</span></div>
+        <img src="https://placehold.co/700x500/f3f4f6/111827?text=Scientific+Calculator" alt="Scientific calculator product placeholder">
+        <div class="floating-tag"><span class="tag-icon">π</span><span><b>Made for the work</b><small>From class to calculations</small></span></div>
+      </div>
+    </section>
+    <section class="benefits"><div class="wrap benefit-grid"><div><span>01</span><b>Student-first picks</b><small>Useful tools for everyday study</small></div><div><span>02</span><b>Clear pricing</b><small>See the product price upfront</small></div><div><span>03</span><b>Online checkout</b><small>Payment confirmation built in</small></div></div></section>
+    <section class="products-section wrap" id="products">
+      <div class="section-head"><div><p class="eyebrow">THE STORE</p><h2>Essentials for your desk.</h2><p>Practical picks for classes, labs and exam preparation.</p></div><span class="product-count">FEATURED PRODUCT</span></div>
+      <div id="products-grid" class="product-grid"><div class="loading">Loading products…</div></div>
+    </section>
+    <section class="why-section" id="why-us"><div class="wrap why-inner"><div><p class="eyebrow">WHY NOTES FACTORY</p><h2>Less hassle.<br>More focus.</h2></div><p>We’re building a student-friendly store where product details, pricing and checkout are clear. Product availability, warranty terms and dispatch estimates will be confirmed before your order is fulfilled.</p></div></section>
+    <section class="checkout-section wrap" id="checkout">
+      <div class="checkout-intro"><p class="eyebrow">READY WHEN YOU ARE</p><h2>Make it yours.</h2><p>Add your delivery details to continue to secure online checkout.</p><div class="checkout-note"><span>🔒</span><span><b>Your details matter</b><small>Payment is handled through the payment gateway. Never share your UPI PIN or OTP with the store.</small></span></div></div>
+      <form id="checkout-form" class="checkout-form">
+        <div class="form-title"><h3>Delivery details</h3><span id="checkout-total">₹0</span></div>
+        <label>Full name<input name="name" autocomplete="name" required maxlength="120" placeholder="Name for delivery"></label>
+        <div class="form-row"><label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><label>Mobile number<input name="phone" inputmode="numeric" autocomplete="tel" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit number"></label></div>
+        <label>Full delivery address<textarea name="address" autocomplete="street-address" required maxlength="500" rows="3" placeholder="House / street, area, city, state"></textarea></label>
+        <label>PIN code<input name="pincode" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{6}" maxlength="6" required placeholder="6-digit PIN code"></label>
+        <div class="checkout-summary"><span>Product subtotal</span><b id="summary-subtotal">₹0</b><span>Shipping</span><b>Confirmed before dispatch</b></div>
+        <button class="primary-btn full-btn" type="submit" id="pay-button">Continue to payment <span>→</span></button>
+        <p class="fine-print">By continuing, you agree to the store’s Terms, Privacy and Refund policies. Final shipping charges must be displayed and accepted before payment is enabled.</p>
+        <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer id="footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="/"><span class="brand-mark">NF</span><span>NOTES<span class="brand-light"> FACTORY</span><small>TOOLS FOR YOUR NEXT BIG IDEA</small></span></a><div class="footer-links"><a href="/policies.html#about">About</a><a href="/policies.html#shipping">Shipping</a><a href="/policies.html#returns">Returns</a><a href="/policies.html#privacy">Privacy</a><a href="/policies.html#terms">Terms</a></div><p>© <span id="year"></span> Notes Factory. Independent student-focused store.</p></div></footer>
+</body>
+</html>
