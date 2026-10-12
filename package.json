@@ -1,0 +1,17 @@
+{
+  "name": "notes-factory-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Notes Factory physical-product ecommerce starter",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.5.0",
+    "razorpay": "^2.9.6",
+    "better-sqlite3": "^11.8.1"
+  }
+}
